@@ -1,7 +1,7 @@
 ## 拉取镜像
 
 ```
-docker pull rabbitmq:3.7.7-management
+docker pull waltonmax/rabbitmq-management
 ```
 
 
