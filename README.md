@@ -34,3 +34,4 @@ docker exec -it [name|id] bash #进入容器
 
 rabbitmq-plugins enable rabbitmq_management #开启web管理界面插件
 ```
+web管理端：http://Server-IP:15672
