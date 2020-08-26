@@ -1,7 +1,7 @@
 ## 拉取镜像
 
 ```
-docker pull waltonmax/rabbitmq-management
+docker pull waltonmax/rabbitmq:management
 ```
 
 
@@ -17,7 +17,7 @@ mkdir -p /data/rabbitmq/data
 ## 使用镜像运行容器
 
 ```dockerfile
-docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 -v /data/rabbitmq/data:/var/lib/rabbitmq --hostname rabbit-node1 -e RABBITMQ_DEFAULT_VHOST=rabbit_node1_vhost -e RABBITMQ_DEFAULT_USER=root -e RABBITMQ_DEFAULT_PASS=root rabbitmq:3.7.7-management
+docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 -v /data/rabbitmq/data:/var/lib/rabbitmq --hostname rabbit-node1 -e RABBITMQ_DEFAULT_VHOST=rabbit_node1_vhost -e RABBITMQ_DEFAULT_USER=root -e RABBITMQ_DEFAULT_PASS=root rabbitmq:management
 命令解析：
     -d 后台运行容器；
 	--name 指定容器名；
